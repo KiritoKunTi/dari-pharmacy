@@ -142,7 +142,7 @@ body {
 .wrapper-treatments {
     background-color: #f8fafb;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 120px;
 }
 .wrap-treatments {
     margin: 0 auto;
@@ -231,7 +231,7 @@ body {
 .product_review {
     display: flex;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 35px;
     align-items: center;
 }
 .review-text {
