@@ -1,38 +1,41 @@
-<header class="header">
-    <div class="block-header">
+<div class="header">
 
-        <div class="header-first">
-            <a class="header-logo" href="">
-                <img width="36px" height="36px" src="../../design/logo.svg" alt="">
-                <div class="logo-text">
-                    <span class="dark-blue">The DARI</span>
-                    <span class="blue">PHARMACY</span>
+    <div class="wrapper-header">
+        <div class="block-header">
+
+            <div class="header-first">
+                <a class="header-logo" href="">
+                    <img width="36px" height="36px" src="../../design/logo.svg" alt="">
+                    <div class="logo-text">
+                        <span class="dark-blue">The DARI</span>
+                        <span class="blue">PHARMACY</span>
+                    </div>
+                </a>
+
+                <div class="header-search">
+                    <form class="search-form" method="post">
+                        <input class="search-input" placeholder="Search for a condition or treatment..." type="text" required/>
+                        <button class="search-btn" type="submit">
+                            <img width="18px" height="18px" src="../../design/search.svg" alt="" class="search-logo">
+                        </button>
+                    </form>
                 </div>
-            </a>
-
-            <div class="header-search">
-                <form class="search-form" method="post">
-                    <input class="search-input" placeholder="Search for a condition or treatment..." type="text" required/>
-                    <button class="search-btn" type="submit">
-                        <img width="18px" height="18px" src="../../design/search.svg" alt="" class="search-logo">
-                    </button>
-                </form>
             </div>
-        </div>
-        <div class="header-second">
-            <a class="sign-in" href="">
-                <span>Sign in</span>
-                <img src="../../design/avatar-dark-blue.svg" alt="" class="sign-in__logo">
-            </a>
+            <div class="header-second">
+                <a class="sign-in" href="">
+                    <span>Sign in</span>
+                    <img src="../../design/avatar-dark-blue.svg" alt="" class="sign-in__logo">
+                </a>
 
-            <a class="basket" href="">
-                <span>Basket</span>
-                <img src="../../design/cart.svg" alt="" class="basket__logo">
-            </a>
-        </div>
+                <a class="basket" href="">
+                    <span>Basket</span>
+                    <img src="../../design/cart.svg" alt="" class="basket__logo">
+                </a>
+            </div>
 
+        </div>
     </div>
-</header>
+</div>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
@@ -60,9 +63,12 @@
         color: #0e67a2;
     }
     .header {
+        border: 1px solid #e3eff8;
+    }
+    .wrapper-header {
         width: 100%;
         max-width: 1400px;
-        margin: 20px auto 0;
+        margin: 20px auto 20px;
 
         font-family: 'Ubuntu', sans-serif;
     }
