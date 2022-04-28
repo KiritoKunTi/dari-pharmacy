@@ -3,13 +3,22 @@
 body {
     font-family: 'Ubuntu';
 }
+
+
+/* =================== WELCOME PAGE */
+
 .p24 {
     padding: 24px;
 }
 .wrapper-welcome {
 }
-.wrap-welcome {
+
+._container {
     width: 1200px;
+
+}
+
+.wrap-welcome {
     margin: 150px auto;
 
 
@@ -122,4 +131,65 @@ body {
 }
 .background-image {
     position: absolute;
+}
+
+
+
+/* ================== Treatments  */
+
+
+
+.wrapper-treatments {
+    background-color: #f8fafb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.wrap-treatments {
+    margin: 0 auto;
+}
+
+.block-treatments {
+}
+.treatments-title {
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(24, 67, 99);
+    line-height: 35px;    
+}
+.treatments-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(23, 43, 58);
+    line-height: 25px;
+
+    margin-top: 16px;    
+}
+.wrapper-grid-treatments {
+    margin-top: 32px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    gap: 24px;
+}
+.wrapp-grid-item {
+    background-color: white;
+    box-shadow: rgba(24, 67, 99, 0.1) 0px 8px 16px 0px, rgba(24, 67, 99, 0.1) 0px 1px 2px 0px;
+
+    border-radius: 7px;
+    transition: box-shadow linear .3s;
+}
+.wrapp-grid-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.32) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.grid__item {
+    display: block;
+    height: 60px;
+    padding: 15px 18px;
+
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(23, 43, 58);
+    line-height: 28px;
+    
 }
