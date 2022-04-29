@@ -1,0 +1,349 @@
+<div class="header">
+
+    <div class="wrapper-header">
+        <div class="block-header">
+
+            <div class="header-first">
+                <a class="header-logo" href="">
+                    <img width="36px" height="36px" src="design/logo.svg" alt="">
+                    <div class="logo-text">
+                        <span class="dark-blue">The DARI</span>
+                        <span class="blue">PHARMACY</span>
+                    </div>
+                </a>
+
+                <div class="header-search">
+                    <form class="search-form" method="post">
+                        <input class="search-input" placeholder="Search for a condition or treatment..." type="text" required/>
+                        <button class="search-btn" type="submit">
+                            <img width="18px" height="18px" src="design/search.svg" alt="" class="search-logo">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-second">
+                <a class="sign-in" href="">
+                    <span>Sign in</span>
+                    <img src="design/avatar-dark-blue.svg" alt="" class="sign-in__logo">
+                </a>
+
+                <a class="basket" href="">
+                    <span>Basket</span>
+                    <img src="design/cart.svg" alt="" class="basket__logo">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+    a {
+        text-decoration: none;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    input, button {
+        outline: none;
+        border: none;
+
+    }
+
+    .blue {
+        color: #07b5e4;
+    }
+    .dark-blue {
+        color: #0e67a2;
+    }
+    .header {
+        border: 1px solid #e3eff8;
+    }
+    .wrapper-header {
+        width: 100%;
+        max-width: 1400px;
+        margin: 20px auto 20px;
+
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .block-header {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+    }
+    .header-first {
+        display: flex;
+        align-items: center;
+    }
+    .header-search {
+        width: 500px;
+        height: 36px;
+
+        margin-left: 15px;
+        position: relative;
+    }
+    .search-input {
+        width: 500px;
+        height: 36px;
+
+        background-color: #edf4f6;
+        border-radius: 5px;
+
+        padding-left: 19px;
+        transition: background-color linear .5s;
+        transition: border linear .3s;
+
+    }
+    .search-input::placeholder {
+        font-family: 'Ubuntu';
+    }
+    .search-input:focus {
+        border: 1px solid #addce6;
+        background-color: white;
+    }
+    .search-btn {
+        height: 36px;
+        width: 41px;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #f4ac34;
+
+        transition: background-color linear  .3s;
+    }
+    .search-btn:hover {
+        background-color: #d98a02;
+    }
+    .header-logo {
+        display: flex;
+        align-items: center;
+
+        margin-right: 30px;
+    }
+    .logo-text {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: -6px;
+        margin-bottom: -2px;
+
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .search-logo {
+    }
+    .header-second {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .header-second a {
+        color: #184363;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .sign-in {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .sign-in__logo {
+    }
+    .basket {
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+    }
+    .basket__logo {
+    }
+</style>
+
+
+<section>
+    <div class="wrapper-product">
+        <div class="wrap-product">
+            <div class="block-product">
+                <img width="292px" height="292px" src="design/abidec-big.jpg" alt="abidec">
+                <div class="product-box">
+                    
+                    <div class="product-desciption">
+                        <div class="product-title">Acetazolamide 250mg Tablets</div>
+                        <div class="flex relative">
+
+                            <div class="product-review mt17">
+                                <div class="star">
+                                    <img width="24px" src="design/star.svg" alt="star">
+                                    <img width="24px" src="design/star.svg" alt="star">
+                                    <img width="24px" src="design/star.svg" alt="star">
+                                    <img width="24px" src="design/star.svg" alt="star">
+                                    <img width="24px" src="design/star.svg" alt="star">
+                                </div>
+                                <span>(12 reviews)</span>
+                            </div>
+
+                            <div class="product-price">1240&#8376;</div>
+                        </div>
+
+                    </div>
+                    <div class="wrapper-buttons mt15">
+                        
+                        <div class="wrap-buy">
+                            <div class="wrap-amount">
+                                <span class="amount_text">Amount:</span>
+                                <span class="amount_text-number">34</span>
+                            </div>
+                            <a href="" class="add_basket text-style">
+                                Add to Basket
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+    .flex {
+        display: flex;
+        align-items: flex-end;
+    }
+    .mt17 {
+        margin-top: 17px;
+    }
+    .mt15 {
+        margin-top: 17px;
+    }
+    .relative {
+        position: relative;;
+    }
+    .wrapper-product {
+        background-color: #f8fafb;
+        height: 660px;
+
+        padding-top: 130px;
+        font-family: 'Ubuntu';
+    }
+    .wrap-product {
+        width: 950px;
+        margin: 0 auto;
+
+    }
+    .block-product {
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-box {
+
+    }
+    .product-desciption {
+    }
+    .product-title {
+        font-weight: 700;
+        font-size: 32px;
+        color: rgb(24, 67, 99);
+        line-height: 38px;
+        text-transform: capitalize;
+    }
+    .product-review {
+        display: flex;
+    }
+    .product-review span {
+        font-weight: 400;
+        font-size: 14px;
+        color: rgb(86, 119, 143);
+        line-height: 23px;
+
+        display: inline-block;
+        margin-bottom: -4px;
+        margin-left: 10px;
+    }
+    .star {
+    }
+    .product-price {
+        position: absolute;
+        right: 0;
+
+        font-weight: 500;
+        font-size: 23px;
+        color: rgb(57, 203, 116);
+        line-height: 23px;
+        
+    }
+    .wrapper-buttons {
+
+    }
+    .wrap-amount {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        padding-bottom: 12px;
+        margin-bottom: 19px;
+        border-bottom: 1px solid #abd4f3;
+    }
+    .amount_text {
+        font-weight: 700;
+        font-size: 16px;
+        color: rgb(23, 43, 58);
+        line-height: 22px;
+    }
+    .amount_text-number {
+       font-weight: 400;
+       font-size: 14px;
+       color: rgb(23, 43, 58);
+       line-height: 22px; 
+    }
+    .wrap-buy {
+        padding: 24px 18px;
+        background-color: white;
+
+        border-radius: 7px;
+                box-shadow: 0 0.5rem 1rem 0 rgb(24 67 99 / 10%), 0 1px 2px 0 rgb(24 67 99 / 10%);
+
+    }
+
+    .add_basket {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(-45deg,#f5b840,#f2971f);;
+        width: 525px;
+        height: 70px;
+        padding: 24px;
+        box-sizing: border-box;
+
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 4px;
+        transition: all linear .2s;
+    }
+    .add_basket:hover {
+        transform: scale(1.02);
+    }
+    .text-style {
+        font-weight: 700;
+        font-size: 13px;
+        color: rgb(24, 67, 99);
+        line-height: 20px;
+        letter-spacing: 1px;
+
+        text-transform: uppercase;
+    }
+</style>
