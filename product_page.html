@@ -63,7 +63,7 @@
         color: #0e67a2;
     }
     .header {
-        border: 1px solid #e3eff8;
+        border: 1px solid #1e2225;
     }
     .wrapper-header {
         width: 100%;
@@ -202,6 +202,9 @@
                     <div class="wrapper-buttons mt15">
                         
                         <div class="wrap-buy">
+
+
+                            <!-- IF PRODUCT EXISTS -->
                             <div class="wrap-amount">
                                 <span class="amount_text">Amount:</span>
                                 <span class="amount_text-number">34</span>
@@ -209,12 +212,31 @@
                             <a href="" class="add_basket text-style">
                                 Add to Basket
                             </a>
+
+                            <!-- ELSE  -->
+                            <div class="wrap-out_stock">
+                                <div class="block-out-stock">
+                                    <div class="danger-svg">
+                                        <img src="design/danger.svg" alt="">
+                                    </div>
+                                    <div class="out_stock-text">
+                                        <div class="danger-text">Out of stock</div>
+                                        <div class="sorry-text">Sorry, this item is currently out of stock.</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+<section>
+    
 </section>
 
 <style>
@@ -345,5 +367,41 @@
         letter-spacing: 1px;
 
         text-transform: uppercase;
+    }
+
+
+    /* out of stock block */
+    .wrap-out_stock {
+        width: 525px;
+        height: 85px;
+        padding: 16px;  
+
+        border-radius: 5px;
+        border-top: 5px solid #d76868;
+
+        box-shadow: 0 0.5rem 1rem 0 rgb(23 43 58 / 10%), 0 1px 2px 0 rgb(23 43 58 / 10%);
+    }
+    .block-out-stock {
+        display: flex;
+
+    }
+    .out_stock-text {
+        margin-left: 14px;
+    }
+    .danger-text {
+        font-weight: 700;
+        font-size: 17px;
+        color: rgb(215, 104, 104);
+        line-height: 22px;
+        
+    }
+    .sorry-text {
+        margin-top: 9px;
+            
+        font-weight: 400;
+        font-size: 15px;
+        color: rgb(86, 119, 143);
+        line-height: 22px;
+        
     }
 </style>
