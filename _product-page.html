@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="_product-page.css">
+</head>
+<body>
+    <!-- section of product  -->
+    <section>
+        <div class="wrapper-product">
+            <div class="wrap-product">
+                <div class="block-product">
+                    <img width="292px" height="292px" src="design/abidec-big.jpg" alt="abidec">
+                    <div class="product-box">
+                        
+                        <div class="product-desciption">
+                            <div class="product-title">Acetazolamide 250mg Tablets</div>
+                            <div class="flex relative">
+
+                                <div class="product-review mt17">
+                                    <div class="star">
+                                        <img width="24px" src="design/star.svg" alt="star">
+                                        <img width="24px" src="design/star.svg" alt="star">
+                                        <img width="24px" src="design/star.svg" alt="star">
+                                        <img width="24px" src="design/star.svg" alt="star">
+                                        <img width="24px" src="design/star.svg" alt="star">
+                                    </div>
+                                    <span>(12 reviews)</span>
+                                </div>
+
+                                <div class="product-price">1240&#8376;</div>
+                            </div>
+
+                        </div>
+                        <div class="wrapper-buttons mt15">
+                            
+                            <div class="wrap-buy">
+
+
+                                <!-- IF PRODUCT EXISTS -->
+                                <div class="wrap-amount">
+                                    <span class="amount_text">Amount:</span>
+                                    <span class="amount_text-number">34</span>
+                                </div>
+                                <a href="" class="add_basket text-style">
+                                    Add to Basket
+                                </a>
+
+                                <!-- ELSE  -->
+                                <div class="wrap-out_stock">
+                                    <div class="block-out-stock">
+                                        <div class="danger-svg">
+                                            <img src="design/danger.svg" alt="">
+                                        </div>
+                                        <div class="out_stock-text">
+                                            <div class="danger-text">Out of stock</div>
+                                            <div class="sorry-text">Sorry, this item is currently out of stock.</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section of product  -->
+
+    <!-- section of reviews  -->
+    <section class="wrapper-reviews">
+        <div class="wrap-reviews">
+            <div class="wrap-product-name">
+                Zolmitriptan 2.5mg Tablets reviews
+            </div>
+            <div class="reviews-head">
+                <input class="input-comment p bg-white change-btn bb" onclick="showComment()" type="button" value="Comments">
+                <input class="input-feedback p bg-white change-btn" onclick="showFeedback()" type="button" value="Feedback">
+            </div>
+
+            <!-- comment  -->
+            <div class="block-reviews js-comment transition">
+                <!-- block for back end -->
+                <div class="box-review">
+                    <div class="column-first">
+                        <div class="client-name">Susan</div>
+                        <span class="review-date">6 month ago</span>
+
+                    </div>
+                    <div class="column-second">
+                        <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                        <div class="client-review">Excellent service from order to delivery .would definitely recommend and will use on a regular basis myself . </div>
+                    </div>
+                </div>
+                <!-- endblock -->
+
+                
+                <div class="box-review">
+                    <div class="column-first">
+                        <div class="client-name">Susan</div>
+                        <span class="review-date">6 month ago</span>
+
+                    </div>
+                    <div class="column-second">
+                        <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                        <div class="client-review">Excellent service from order to delivery .would definitely recommend and will use on a regular basis myself . </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end comment  -->
+
+
+            <!-- feedback  -->
+            <div class="block-reviews js-feedback display transition">
+                <!-- block for back end -->
+                <div class="box-review">
+                    <div class="column-first">
+                        <div class="client-name">John</div>
+                        <span class="review-date">6 month ago</span>
+                    </div>
+                    <div class="column-second">
+                        <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                        <div class="client-review">This is a feedback</div>
+                    </div>
+                </div>
+                <!-- endblock -->
+
+                
+                <div class="box-review">
+                    <div class="column-first">
+                        <div class="client-name">Juse</div>
+                        <span class="review-date">6 month ago</span>
+
+                    </div>
+                    <div class="column-second">
+                        <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                        <div class="client-review">They r  good for me let me down now and again thou</div>
+                    </div>
+                </div>
+            </div>
+            <!-- end feedback -->
+        </div>
+    </section>
+    <!-- section of reviews  -->
+    <script src="_product-page.js"></script>
+</body>
+</html>

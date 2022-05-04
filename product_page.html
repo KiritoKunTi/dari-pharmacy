@@ -63,7 +63,7 @@
         color: #0e67a2;
     }
     .header {
-        border: 1px solid #1e2225;
+        border-bottom: 1px solid #edf4f6;
     }
     .wrapper-header {
         width: 100%;
@@ -172,7 +172,7 @@
     }
 </style>
 
-
+<!-- section of product  -->
 <section>
     <div class="wrapper-product">
         <div class="wrap-product">
@@ -234,11 +234,9 @@
         </div>
     </div>
 </section>
+<!-- section of product  -->
 
-<section>
-    
-</section>
-
+<!-- style -- product  -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
@@ -405,3 +403,224 @@
         
     }
 </style>
+<!-- style -- product  -->
+
+<!-- section of reviews  -->
+<section class="wrapper-reviews">
+    <div class="wrap-reviews">
+        <div class="wrap-product-name">
+            Zolmitriptan 2.5mg Tablets reviews
+        </div>
+        <div class="reviews-head">
+            <input class="input-comment p bg-white change-btn bb" onclick="showComment()" type="button" value="Comments">
+            <input class="input-feedback p bg-white change-btn" onclick="showFeedback()" type="button" value="Feedback">
+        </div>
+
+        <!-- comment  -->
+        <div class="block-reviews js-comment transition">
+            <!-- block for back end -->
+            <div class="box-review">
+                <div class="column-first">
+                    <div class="client-name">Susan</div>
+                    <span class="review-date">6 month ago</span>
+
+                </div>
+                <div class="column-second">
+                    <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                    <div class="client-review">Excellent service from order to delivery .would definitely recommend and will use on a regular basis myself . </div>
+                </div>
+            </div>
+            <!-- endblock -->
+
+            
+            <div class="box-review">
+                <div class="column-first">
+                    <div class="client-name">Susan</div>
+                    <span class="review-date">6 month ago</span>
+
+                </div>
+                <div class="column-second">
+                    <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                    <div class="client-review">Excellent service from order to delivery .would definitely recommend and will use on a regular basis myself . </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end comment  -->
+
+
+        <!-- feedback  -->
+        <div class="block-reviews js-feedback display transition">
+            <!-- block for back end -->
+            <div class="box-review">
+                <div class="column-first">
+                    <div class="client-name">John</div>
+                    <span class="review-date">6 month ago</span>
+                </div>
+                <div class="column-second">
+                    <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                    <div class="client-review">This is a feedback</div>
+                </div>
+            </div>
+            <!-- endblock -->
+
+            
+            <div class="box-review">
+                <div class="column-first">
+                    <div class="client-name">Juse</div>
+                    <span class="review-date">6 month ago</span>
+
+                </div>
+                <div class="column-second">
+                    <div class="product-name">Zolmitriptan 2.5mg Tablets</div>
+                    <div class="client-review">They r  good for me let me down now and again thou</div>
+                </div>
+            </div>
+        </div>
+        <!-- end feedback -->
+    </div>
+</section>
+<!-- section of reviews  -->
+
+
+<!-- style --- reviews  -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+    * {
+        box-sizing: border-box !important;
+        font-family: 'Ubuntu';
+    }   
+
+    .transition {
+        transition: all .5s linear;
+    }
+
+    .change-btn {
+        font-weight: 600;
+        font-size: 16px;
+        color: rgb(23, 43, 58);
+        line-height: 22.5px;      
+        box-sizing: border-box !important;  
+    }
+    .bg-white {
+        background: white;
+    }
+    .bb {
+        border-bottom: 3px solid #3993cf;
+    }
+    .p {
+        padding: 5px 0;
+    }
+    .review-date {
+        font-weight: 400;
+        font-size: 12px;
+        color: rgb(23, 43, 58);
+        line-height: 20px;
+        
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .wrapper-reviews {
+        margin: 140px 0;
+    }
+    .wrap-product-name {
+        text-align: center;
+        margin-bottom: 70px;
+
+        font-weight: 700;
+        font-size: 29px;
+        color: rgb(24, 67, 99);
+        line-height: 40px;
+    }
+    .wrap-reviews {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .reviews-head {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 15px 0;
+        border-top: 1px solid rgb(223, 237, 247);
+        border-bottom: 1px solid rgb(223, 237, 247);
+    }
+    .block-reviews {
+    }
+    .box-review {
+        display: flex;
+        margin-top: 40px;
+        height: 120px;
+
+        border-radius: 3px;
+        border: 1px solid rgb(223, 237, 247);
+    }
+    .column-first {
+        width: 180px;
+
+        padding: 30px;
+    }
+    .column-second {
+        margin: 30px;
+        padding-left: 30px;
+        border-left: 1px solid rgb(223, 237, 247);
+        
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .client-name {
+    }
+    .product-name {
+        font-weight: 600;
+        font-size: 16px;
+        color: rgb(23, 43, 58);
+        line-height: 22px;
+    }
+    .client-review {
+        font-weight: 400;
+        font-size: 15px;
+        color: rgb(23, 43, 58);
+        line-height: 21px;
+    }
+
+    .display {
+        visibility: hidden;
+        display: none;
+    }
+
+</style>
+<!-- style --- reviews  -->
+
+
+<!-- script --- reviews  -->
+<script>
+    var nodeCommentBtn = document.querySelector('.js-comment');
+    var nodeFeedbackBtn = document.querySelector('.js-feedback');
+    var nodeComment = document.querySelector('.input-comment');
+    var nodeFeedback = document.querySelector('.input-feedback');
+
+    console.log(nodeCommentBtn);
+
+    function showComment() {
+        nodeCommentBtn.classList.remove('display');
+        nodeFeedbackBtn.classList.add('display');
+
+        nodeComment.classList.add('bb');
+        nodeFeedback.classList.remove('bb');
+    };
+
+    function showFeedback() {
+        nodeCommentBtn.classList.add('display');
+        nodeFeedbackBtn.classList.remove('display');
+
+        nodeComment.classList.remove('bb');
+        nodeFeedback.classList.add('bb');
+    };   
+
+
+
+</script>
+<!-- script --- reviews  -->
+
+
