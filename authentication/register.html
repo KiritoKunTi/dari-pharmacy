@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-    <h1>register</h1>
+    
+    <section class="register">
+        <header class="register-header">
+            <img class="rotate pos-abs-img" src="images/register-head.svg" alt="">    
+            <div class="wrapper-header-text">
+                <div class="header-title">Create an account</div>
+                <div class="header-subtitle">
+                    Create your account with us to be able to buy treatments and<br> register for our NHS prescription service.
+                </div>
+            </div>
+        </header>
+        
+        <section class="wrap-register-form">
+            <form class="register-form" method="post">
+                <div class="form-field">
+                    <div class="label">Username</div>
+                    <input type="text" name="username">
+                </div>
+                <div class="form-field">
+                    <div class="label">First Name</div>
+                    <input type="text" name="first_name">
+                </div>
+                <div class="form-field">
+                    <div class="label">Last Name</div>
+                    <input type="text" name="last_name">
+                </div>
+                <div class="form-field">
+                    <div class="label">Email</div>
+                    <input type="text" name="email">
+                </div>
+                <div class="form-field">
+                    <div class="label">Password</div>
+                    <input type="password" name="password">
+                </div>
+                <div class="form-field">
+                    <div class="label">Confirm Password</div>
+                    <input type="password_confirm" name="password">
+                </div>
+            </form>
+            <button type="submit" class="uppercase register-submit-btn">Create personal profile</button>
+        </section>
+
+    </section>
 </body>
 </html>
