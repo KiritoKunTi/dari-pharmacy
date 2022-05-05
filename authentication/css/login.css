@@ -9,6 +9,7 @@ a {
     text-decoration: none;
 }
 input {
+    outline: none;
     width: 352px;
     height: 45px;
     padding: 12px 16px;
