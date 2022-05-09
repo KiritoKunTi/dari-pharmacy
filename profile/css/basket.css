@@ -186,3 +186,102 @@ body {
     margin-left: 30px;
 }
 /* box product in basket */
+
+
+/* delete popup */
+
+button {
+    border: none;
+    background-color: inherit;
+}
+
+.toggleBtn {
+    display: block !important;
+}
+
+.no-scroll {
+    overflow-x: hidden;
+}
+    
+.delete-form {
+}
+.delete-popup-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(235,245,248,.9);
+    width: 100%;
+    height: 100%;
+
+    transition: display .3s linear;
+}
+.delete-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 196px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 4px;
+
+    box-shadow: 0 .5rem 1rem 0 rgba(23,43,58,.1),0 1px 2px 0 rgba(23,43,58,.1);
+    border-top: 5px solid #d76868;
+}
+.delete-popup__first {
+    display: flex;
+    justify-content: space-between;
+}
+.danger {
+    display: flex;
+    align-items: center;
+}
+.danger strong {
+    color: #d76868;
+    font-weight: 700;
+    font-size: 16px;   
+    
+    margin-left: 8px;
+}
+#close-btn {
+    cursor: pointer;
+}
+.delete-popup-second {
+    margin-top: 18px;
+
+    font-weight: 400;
+    font-size: 14.22px;
+    color: rgb(86, 119, 143);    
+}
+.delete-popop-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 19px;
+}
+.delete-cancel {
+    color: rgb(18, 128, 151);
+}
+.delete-cancel:hover {
+    background-color: #ddf4ff;
+}
+.danger-delete-btns {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12.64px;
+    padding: 16px;  
+    border-radius: 3px;
+    letter-spacing: .7px;
+    transition: all .3s linear;
+}
+.danger-delete-btns:hover{
+    transform: scale(1.05);
+}
+.delete-confirm {
+    margin-left: 10px;
+    color: rgb(24, 67, 99);
+    background-image: linear-gradient(-45deg,#f5b840,#f2971f) ;
+}
+/* delete popup */

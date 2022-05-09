@@ -60,26 +60,8 @@
                         <div class="product-manipulate">
                             <div class="last-updated-date">8 Май 2022</div>
                             <div class="product-manipulate-buttons">
-                                <a href="" onclick="return confirm('Вы действительно хотите удалить из корзины продукт?')"
-                                class="delete-btn basket-buttons">Удалить</a>
-                                <a href="" onclick="return prompt('Какое количество?')" class="checkout-btn basket-buttons">Изменить</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="box-product">
-                        <div class="product-info">
-                            <div class="product-name">
-                                <a href="">Abidec Drops</a>
-                            </div>
-                            <div class="product-amount">
-                                2 items | Total: 980тг
-                            </div>
-                        </div>
-                        <div class="product-manipulate">
-                            <div class="last-updated-date">8 Май 2022</div>
-                            <div class="product-manipulate-buttons">
-                                <a href="" onclick="return confirm('Вы действительно хотите удалить из корзины продукт?')" class="delete-btn basket-buttons">Удалить</a>
+                                <!-- <a href="" onclick="openDeletePopUP()" class="delete-btn basket-buttons">Удалить</a> -->
+                                <button class="delete-btn basket-buttons" onclick="openDeletePopUP()">Удалить</button>
                                 <a href="" onclick="return prompt('Какое количество?')" class="checkout-btn basket-buttons">Изменить</a>
                             </div>
                         </div>
@@ -91,5 +73,28 @@
         </div>
     </section>
 
+
+    <div class="delete-popup-bg">
+        <div class="delete-popup">
+            <div class="delete-popup__first">
+                <div class="danger">
+                    <img src="images/danger.svg" alt="">
+                    <strong>Delete saved basket?</strong>
+                </div>
+                <button id="js-close-btn"><img src="images/close.svg" alt=""></button>
+            </div>
+            <div class="delete-popup-second">
+                Are you sure you want to delete this basket?
+            </div>
+            <div class="delete-popop-buttons">
+                <button id="js-delete-cancel" class="delete-cancel danger-delete-btns">cancel</button>
+                <form action="" method="post" class="delete-form">
+                    <button type="submit" class="delete-confirm danger-delete-btns">confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/basket.js"></script>
 </body>
 </html>
