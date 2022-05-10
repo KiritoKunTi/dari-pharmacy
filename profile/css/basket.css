@@ -295,6 +295,86 @@ button {
 }
 /* delete popup */
 
+/* checkout popup  */
+input {
+    outline: none;
+    border: none;
+}
+
+.checkout-popup-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(235,245,248,.9);
+    width: 100%;
+    height: 100%;
+
+    transition: display .3s linear;
+}
+.checkout-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+
+    box-shadow: 0 .5rem 1rem 0 rgba(23,43,58,.1),0 1px 2px 0 rgba(23,43,58,.1);
+}
+.checkout-popup-header {
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.checkout-question {
+    font-weight: 700;
+    font-size: 13px;
+    color: rgb(24, 67, 99);
+
+    text-transform: uppercase;
+}
+.checkout-max-amount {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(23, 43, 58);
+}
+.checkout-amount-input {
+    margin-top: 15px;
+    height: 40px;
+    background-color: rgb(242, 242, 242);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.checkout-submit-btn {
+    display: block;
+    padding: 16px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 13.2px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin: 12px auto 0;
+    
+    color: #128097;
+    transition: transform .3s linear;    
+}
+
+.checkout-submit-btn:hover {
+    transform: scale(1.05);
+    background-color: #ddf4ff;
+}
+/* checkout popup  */
 
 /* buy popup */
 textarea {

@@ -15,19 +15,33 @@ closeBtn.onclick = function() {
     nodeDeletePopUp.classList.remove('toggleBtn');
 }
 
-
+// buy popup 
 const nodeBuyPopUp = document.querySelector('.buy-popup-bg');
 
 function openBuyPopUp() {
     nodeBuyPopUp.classList.add('toggleBtn');
 }
+// buy popup 
 
-// window.onclick = function(event) {
-//     if(event.target == nodeBuyPopUp)  {
-//         nodeBuyPopUp.style.display = 'none';
-//     }
-//     if(event.target == nodeDeletePopUp)  {
-//         nodeDeletePopUp.classList.remove('toggleBtn');
-//     }
-// }
+
+// checkout popup 
+const nodeCheckoutPopUp = document.querySelector('.checkout-popup-bg');
+
+function openCheckoutPopUp() {
+    nodeCheckoutPopUp.classList.add('toggleBtn');
+}
+
+// checkout popup 
+
+
+
+
+window.onclick = function(event) {
+    if(event.target == nodeCheckoutPopUp)  {
+        nodeCheckoutPopUp.classList.remove('toggleBtn');
+    }
+    if(event.target == nodeDeletePopUp)  {
+        nodeDeletePopUp.classList.remove('toggleBtn');
+    }
+}
 

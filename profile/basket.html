@@ -63,7 +63,8 @@
                                 <button class="buy-btn basket-buttons" onclick="openBuyPopUp()">Купить</button>
                                 <!-- <a href="" onclick="openDeletePopUP()" class="delete-btn basket-buttons">Удалить</a> -->
                                 <button class="delete-btn basket-buttons" onclick="openDeletePopUP()">Удалить</button>
-                                <a href="" onclick="return prompt('Какое количество?')" class="checkout-btn basket-buttons">Изменить</a>
+                                <!-- <a href="" onclick="return prompt('Какое количество?')" class="checkout-btn basket-buttons">Изменить</a> -->
+                                <button class="checkout-btn basket-buttons" onclick="openCheckoutPopUp()">Изменить</button>
                             </div>
                         </div>
                     </div>
@@ -74,6 +75,18 @@
         </div>
     </section>
 
+    <div class="checkout-popup-bg">
+        <div class="checkout-popup">
+            <div class="checkout-popup-header">
+                <div class="checkout-question">Сколько вы хотите купить?</div>
+                <div class="checkout-max-amount">Max: 12</div>
+            </div>
+            <form action="" method="post" class="checkout-form">
+                <input type="number" max="12" name="amount" id="" class="checkout-amount-input">
+                <button type="submit" class="checkout-submit-btn">Изменить</button>
+            </form>
+        </div>
+    </div>
 
     <div class="delete-popup-bg">
         <div class="delete-popup">
